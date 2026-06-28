@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compressor UI</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🖼 Image Compressor</h1>
+        <p>Upload and compress images instantly in your browser</p>
+
+        <div class="upload-box">
+
+            <input type="file" id="fileInput" accept="image/*">
+
+            <label for="fileInput" class="upload-label">
+                <i class="fa-solid fa-upload"></i>
+                Choose Image
+            </label>
+
+        </div>
+
+        <div class="preview">
+
+            <img id="previewImg" src="" alt="Preview Image">
+
+        </div>
+
+        <div class="controls">
+
+            <label>Quality: <span id="qualityValue">80</span>%</label>
+
+            <input type="range" id="quality" min="10" max="100" value="80">
+
+            <button id="downloadBtn" class="primary">
+                <i class="fa-solid fa-download"></i>
+                Download Compressed Image
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

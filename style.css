@@ -1,0 +1,144 @@
+/* =========================
+   Base Setup
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#e0f2fe,#f5f3ff,#ecfccb);
+    padding:20px;
+}
+
+/* =========================
+   Container
+========================= */
+
+.container{
+    width:100%;
+    max-width:500px;
+}
+
+/* =========================
+   Card
+========================= */
+
+.card{
+    background:#fff;
+    padding:25px;
+    border-radius:20px;
+    box-shadow:0 15px 40px rgba(0,0,0,0.1);
+    text-align:center;
+    animation:fade 0.4s ease;
+}
+
+@keyframes fade{
+    from{
+        opacity:0;
+        transform:translateY(15px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+/* =========================
+   Text
+========================= */
+
+h1{
+    margin-bottom:8px;
+    color:#1f2937;
+}
+
+p{
+    color:#6b7280;
+    margin-bottom:20px;
+}
+
+/* =========================
+   Upload Box
+========================= */
+
+.upload-box{
+    margin-bottom:20px;
+}
+
+input[type="file"]{
+    display:none;
+}
+
+.upload-label{
+    display:inline-block;
+    padding:12px 18px;
+    background:linear-gradient(135deg,#6366f1,#4f46e5);
+    color:#fff;
+    border-radius:12px;
+    cursor:pointer;
+    font-weight:600;
+    transition:0.3s;
+}
+
+.upload-label:hover{
+    transform:translateY(-3px);
+}
+
+/* =========================
+   Preview
+========================= */
+
+.preview{
+    margin:20px 0;
+}
+
+.preview img{
+    max-width:100%;
+    border-radius:16px;
+    display:none;
+    box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+/* =========================
+   Controls
+========================= */
+
+.controls{
+    text-align:left;
+}
+
+.controls label{
+    font-weight:600;
+    color:#374151;
+}
+
+input[type="range"]{
+    width:100%;
+    margin:10px 0 20px 0;
+}
+
+button{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:14px;
+    cursor:pointer;
+    font-weight:600;
+    font-size:15px;
+    background:linear-gradient(135deg,#6366f1,#4f46e5);
+    color:#fff;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-3px);
+    box-shadow:0 12px 25px rgba(99,102,241,0.25);
+}
